@@ -3,7 +3,7 @@
 
 How to run:
 
--Check out the code
+-Check out the code(git clone the repository)
 
 -type 'npm install' in the terminal
 
