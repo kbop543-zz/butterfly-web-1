@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
     extended: true
 }));
 
-// Main page. 
+// Main page.
 app.get('/', function(req, res) {
 
 	res.render('index', {
@@ -39,5 +39,8 @@ app.get('/courses', ta.findWithCourses);*/
 
 
 // Start the server
-app.listen(3000);
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Our app is running on port ${ PORT }`);
+});
 console.log('Listening on port 3000');
